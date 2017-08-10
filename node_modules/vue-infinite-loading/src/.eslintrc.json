@@ -1,0 +1,16 @@
+{
+  "extends": "airbnb-base",
+  "plugins": [
+    "html"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".json", ".vue"]
+      }
+    }
+  },
+  "env": {
+    "browser": true
+  }
+}
