@@ -1,6 +1,7 @@
 # HungerStrike
 
 https://www.wenjieyan.com/hungerstrike
+
 基于 Vue 2.x 的小程序推荐平台
 ## 首页
 
@@ -25,4 +26,4 @@ https://www.wenjieyan.com/hungerstrike
 
 ## 搜索
 
-![img](http://m.qpic.cn/psb?/V10ZHE9M4DB6nN/Eve9oLNNGQ2XAnCstmQy7YjFj94QKm9vhw11HQ2Pidk!/b/dAgBAAAAAAAA&bo=mAHdApgB3QIDFzI!&rf=viewer_4)
+![img](http://m.qpic.cn/psb?/V10ZHE9M4DB6nN/Mq9py2tAYqdZQS02du5IGfUmEMNRE2CJ42APPZZeGbQ!/b/dFYBAAAAAAAA&bo=mgHcApoB3AIDFzI!&rf=viewer_4)
