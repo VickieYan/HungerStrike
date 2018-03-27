@@ -23,31 +23,41 @@
 	</div>
 </template>
 <script>
-	import Item from'./tabbaritem.vue'
-	export default{
-		components:{
-			Item
-		},
-		props:['selected'],
-		data:function(){
-			return{
-				checked:0
-			}
-		},
-		methods:{
-			fn1:function(val){
-				
-				this.checked = val;
-			}
-		},
-		watch:{
-			selected:function(newVal,oldVal){
-				this.checked = newVal;
-				this.$emit('change');
-			}
-		}
-	}
+import Item from "./tabbaritem.vue";
+export default {
+  components: {
+    Item
+  },
+  props: ["selected"],
+  data: function() {
+    return {
+      checked: 0
+    };
+  },
+  methods: {
+    fn1: function(val) {
+      this.checked = val;
+    }
+  },
+  watch: {
+    selected: function(newVal, oldVal) {
+      this.checked = newVal;
+      this.$emit("change");
+    }
+  }
+};
 </script>
 <style>
-	.tabbar{width: 100%;height: 0.56rem;box-shadow: 0 0 .2rem #ccc;position: fixed;bottom: 0;padding-top: .07rem;z-index: 100;background: white;opacity: .95;text-align: center;}
+.tabbar {
+  width: 100%;
+  height: 0.56rem;
+  box-shadow: 0 0 0.2rem #ccc;
+  position: fixed;
+  bottom: 0;
+  padding-top: 0.07rem;
+  z-index: 100;
+  background: white;
+  opacity: 0.95;
+  text-align: center;
+}
 </style>

@@ -10,28 +10,21 @@
 </template>
 
 <script>
-    import Allitem from './allItem'
-    export default {
-        data() {
-            return {
-              arrComment:[]
-            }
-        },
-        components: {
-             Allitem
-        },
-        mounted(){
-          var _this = this;
-          this.axios.get("../../static/json/comment.json").then(function(res){
-              _this.arrComment = res.data;
-
-          })
-        }
-    }
-
+import Allitem from "./allItem";
+export default {
+  data() {
+    return {
+      arrComment: []
+    };
+  },
+  components: {
+    Allitem
+  },
+  mounted() {
+    var _this = this;
+    this.axios.get("../../static/json/comment.json").then(function(res) {
+      _this.arrComment = res.data;
+    });
+  }
+};
 </script>
-
-<style>
-
-
-</style>

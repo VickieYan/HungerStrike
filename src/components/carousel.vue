@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import '../assets/libs/swiper/js/swiper.min.js'
-  export default {
+import "../assets/libs/swiper/js/swiper.min.js";
+export default {
   props: {
     swiperid: {
       type: String,
@@ -51,24 +51,26 @@ import '../assets/libs/swiper/js/swiper.min.js'
       type: [Number, String],
       default: 1
     },
-    observer: {//修改swiper自己或子元素时，自动初始化swiper
+    observer: {
+      //修改swiper自己或子元素时，自动初始化swiper
       type: Boolean,
       default: true
     },
-    observeParents: {//修改swiper的父元素时，自动初始化swiper
+    observeParents: {
+      //修改swiper的父元素时，自动初始化swiper
       type: Boolean,
       default: true
     }
   },
-  mounted: function () {
-    var _this=this;
-    new Swiper("."+_this.swiperid, {
+  mounted: function() {
+    var _this = this;
+    new Swiper("." + _this.swiperid, {
       effect: _this.effect,
       loop: _this.loop,
       diraction: _this.diraction,
       autoplay: _this.autoplay,
       paginationType: _this.paginationType,
-      pagination: "."+_this.swiperid+" .swiper-pagination",//避免第一个轮播出现多个分页器，和自己的子元素不符合
+      pagination: "." + _this.swiperid + " .swiper-pagination", //避免第一个轮播出现多个分页器，和自己的子元素不符合
       paginationDirection: _this.paginationDirection,
       autoplayDisableOnInteraction: false,
       loopedSlides: _this.loopedSlides,
@@ -77,10 +79,9 @@ import '../assets/libs/swiper/js/swiper.min.js'
       observeParents: _this.observeParents
     });
   }
-}
+};
 </script>
 
 <style scoped>
-  @import "../assets/libs/swiper/css/swiper.min.css";
-  
+@import "../assets/libs/swiper/css/swiper.min.css";
 </style>

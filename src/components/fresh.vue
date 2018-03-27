@@ -15,35 +15,60 @@
 	</div>
 </template>
 <script>
-	import Item from './freshitem.vue'
+import Item from "./freshitem.vue";
 
-	export default{
-		components:{
-			Item
-		},
-		data:function(){
-			return{
-				arrData:[]
-			}
-		},
-		mounted:function(){
-			var _this = this;
-			this.axios.get("../../static/json/application.json").then(function(res){
-				_this.arrData = res.data.slice(0,3);
-			})
-		},
-		methods:{
-			fn1:function(){
-				this.$router.push('/morefresh')
-			}
-		}
-	}
+export default {
+  components: {
+    Item
+  },
+  data: function() {
+    return {
+      arrData: []
+    };
+  },
+  mounted: function() {
+    var _this = this;
+    this.axios.get("../../static/json/application.json").then(function(res) {
+      _this.arrData = res.data.slice(0, 3);
+    });
+  },
+  methods: {
+    fn1: function() {
+      this.$router.push("/morefresh");
+    }
+  }
+};
 </script>
 <style>
-	.fresh{width: 100%;background: white;font-family: 'microsoft YaHei';margin-bottom: .1rem;}
-	.fresh .title{padding: .16rem;border-bottom: .01rem solid #eee;overflow: hidden;}
-	.fresh .title h3{font-size: .14rem;font-weight: normal;float: left;line-height: .1rem;height: .1rem;color: black;}
-	.fresh .title p{font-size: .14rem;font-weight: normal;float: right;line-height: .1rem;height: .1rem;color: black;color: #808080;}
-	.fresh .main{padding: .16rem;}
-	
+.fresh {
+  width: 100%;
+  background: white;
+  font-family: "microsoft YaHei";
+  margin-bottom: 0.1rem;
+}
+.fresh .title {
+  padding: 0.16rem;
+  border-bottom: 0.01rem solid #eee;
+  overflow: hidden;
+}
+.fresh .title h3 {
+  font-size: 0.14rem;
+  font-weight: normal;
+  float: left;
+  line-height: 0.1rem;
+  height: 0.1rem;
+  color: black;
+}
+.fresh .title p {
+  font-size: 0.14rem;
+  font-weight: normal;
+  float: right;
+  line-height: 0.1rem;
+  height: 0.1rem;
+  color: black;
+  color: #808080;
+}
+.fresh .main {
+  padding: 0.16rem;
+}
 </style>

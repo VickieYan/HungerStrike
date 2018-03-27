@@ -18,30 +18,83 @@
 	</div>
 </template>
 <script type="text/javascript">
-	export default{
-		props:['txt','num',"bol","id"],
-		methods:{
-			fn1:function(){
-				this.$router.push({
-					name:'Appdetail',
-					params:{
-						id:this.id
-					}
-				})
-			}
-		}
-	}
+export default {
+  props: ["txt", "num", "bol", "id"],
+  methods: {
+    fn1: function() {
+      this.$router.push({
+        name: "Appdetail",
+        params: {
+          id: this.id
+        }
+      });
+    }
+  }
+};
 </script>
 <style type="text/css">
+.ranking ul {
+  margin: 0.2rem 0;
+  overflow: hidden;
+  height: 0.4rem;
+  text-align: center; /*border: .01px solid #eee*/
+}
+.ranking li {
+  text-align: center;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.14rem;
+  float: left;
+  list-style: none;
+  width: 25%;
+  overflow: hidden;
+  position: relative;
+}
+.ranking .orange {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  background: #f6d164;
+  display: inline-block;
+  line-height: 0.3rem;
+}
+.ranking li .rank {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  background: #eee;
+  display: inline-block;
+  line-height: 0.3rem;
+}
 
-	.ranking ul{margin: .2rem 0;overflow: hidden;height: .4rem;text-align: center;/*border: .01px solid #eee*/}
-	.ranking li{text-align: center; height: .4rem;line-height: .4rem;font-size: .14rem;float: left;list-style: none;width: 25%;overflow: hidden;position: relative;}
-	.ranking .orange{width: .3rem;height: .3rem;border-radius: 50%;background:#f6d164 ;display: inline-block;line-height: .3rem}
-	.ranking li .rank{width: .3rem;height: .3rem;border-radius: 50%;background:#eee ;display: inline-block;line-height: .3rem}
-	
-	.ranking .active span:nth-child(4) {background: #eee;}
-	.ranking .icon{width: .4rem;height: .4rem;border-radius: 50%;overflow: hidden;}
-	.ranking .text{font-size: .12rem;font-weight: normal;}
-	.ranking .enter{display: inline-block;height: .24rem;width: .5rem;border: .01rem solid #47d268;border-radius: .05rem;line-height: .24rem;color:#47d268;text-decoration: none; }
-	.ranking .pic{width:.2rem;height: .12rem;position: absolute;top: -.03rem;left: .37rem; }
+.ranking .active span:nth-child(4) {
+  background: #eee;
+}
+.ranking .icon {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.ranking .text {
+  font-size: 0.12rem;
+  font-weight: normal;
+}
+.ranking .enter {
+  display: inline-block;
+  height: 0.24rem;
+  width: 0.5rem;
+  border: 0.01rem solid #47d268;
+  border-radius: 0.05rem;
+  line-height: 0.24rem;
+  color: #47d268;
+  text-decoration: none;
+}
+.ranking .pic {
+  width: 0.2rem;
+  height: 0.12rem;
+  position: absolute;
+  top: -0.03rem;
+  left: 0.37rem;
+}
 </style>

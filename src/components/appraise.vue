@@ -8,21 +8,21 @@
 	</div>
 </template>
 <script>
-	import Evaluationitem from './evaluationItem.vue'
-	export default {
-	    components:{
-	    	Evaluationitem
-	    },
-	    data:function(){
-	    	return{
-	    		arrData:[]
-	    	}
-	    },
-	    mounted:function(){
-	    	var _this = this;
-			this.axios.get("../../static/json/comment.json").then(function(res){
-				_this.arrData = res.data;
-			})
-	    }
-    }
+import Evaluationitem from "./evaluationItem.vue";
+export default {
+  components: {
+    Evaluationitem
+  },
+  data: function() {
+    return {
+      arrData: []
+    };
+  },
+  mounted: function() {
+    var _this = this;
+    this.axios.get("../../static/json/comment.json").then(function(res) {
+      _this.arrData = res.data;
+    });
+  }
+};
 </script>

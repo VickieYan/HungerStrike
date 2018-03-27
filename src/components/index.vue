@@ -10,10 +10,10 @@
 	</div>
 </template>
 <script type="text/javascript">
-	import myHeader from './header'
-	export default{
-		components:{
-			myHeader,
-		}
-	}
+import myHeader from "./header";
+export default {
+  components: {
+    myHeader
+  }
+};
 </script>

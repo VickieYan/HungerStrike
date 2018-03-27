@@ -5,7 +5,20 @@
 	</div>
 </template>
 <style>
-	.submenu{height: 0.4rem;background: white;border-bottom:.01rem solid #ccc;font-size: .12rem;}
-	.submenu h3{font-weight: normal;width: 50%;float:left;text-align: center;line-height: .4rem}
-	.submenu a{color: #666;}
+.submenu {
+  height: 0.4rem;
+  background: white;
+  border-bottom: 0.01rem solid #ccc;
+  font-size: 0.12rem;
+}
+.submenu h3 {
+  font-weight: normal;
+  width: 50%;
+  float: left;
+  text-align: center;
+  line-height: 0.4rem;
+}
+.submenu a {
+  color: #666;
+}
 </style>

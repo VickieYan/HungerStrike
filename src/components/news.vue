@@ -18,44 +18,42 @@
 	</div>
 </template>
 <script>
-    export default {
-        data() {
-            return {
-                nowIndex: 1
-            }
-        },
-        components: {}
-    }
-
+export default {
+  data() {
+    return {
+      nowIndex: 1
+    };
+  },
+  components: {}
+};
 </script>
 
 <style>
-    .newsWrap h1 {
-        font-size: 0.5rem;
-    }
-    
-    .newsWrap .secnav {
-        height: .4rem;
-        background: white;
-        line-height: .4rem;
-    }
-    
-    .newsWrap .secnav li {
-        list-style: none;
-        font-size: .15rem;
-        float: left;
-        width: 25%;
-        text-align: center;
-        font-weight: bold;
-    }
-    
-    .newsWrap .secnav a {
-        text-decoration: none;
-        color: #000;
-    }
-    
-    .newsWrap .secnav .active a {
-        color: #0db252;
-    }
+.newsWrap h1 {
+  font-size: 0.5rem;
+}
 
+.newsWrap .secnav {
+  height: 0.4rem;
+  background: white;
+  line-height: 0.4rem;
+}
+
+.newsWrap .secnav li {
+  list-style: none;
+  font-size: 0.15rem;
+  float: left;
+  width: 25%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.newsWrap .secnav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.newsWrap .secnav .active a {
+  color: #0db252;
+}
 </style>

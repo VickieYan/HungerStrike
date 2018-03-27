@@ -6,15 +6,35 @@
 	</div>
 </template>
 <script type="text/javascript">
-	export default{
-		props: ['txt1','txt2']
-	}
+export default {
+  props: ["txt1", "txt2"]
+};
 </script>
 <style type="text/css">
-	.information{height: .58rem;text-align: center;position: relative;line-height: 0rem;border-bottom: .01rem solid #eee}
-	.information a{display: inline-block;width: 50%;height: .58rem;font-size: .2rem;color: black;text-decoration: none;line-height: .58rem;}
-	.information .left{float: left;}
-	.information .right{float: right;}
-	.information .active{color: #fff;background: #0eab5c}
-
+.information {
+  height: 0.58rem;
+  text-align: center;
+  position: relative;
+  line-height: 0rem;
+  border-bottom: 0.01rem solid #eee;
+}
+.information a {
+  display: inline-block;
+  width: 50%;
+  height: 0.58rem;
+  font-size: 0.2rem;
+  color: black;
+  text-decoration: none;
+  line-height: 0.58rem;
+}
+.information .left {
+  float: left;
+}
+.information .right {
+  float: right;
+}
+.information .active {
+  color: #fff;
+  background: #0eab5c;
+}
 </style>
