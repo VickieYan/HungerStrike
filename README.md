@@ -13,7 +13,7 @@ https://www.wenjieyan.com/hungerstrike
 
 ## 专题
 
-![img](http://m.qpic.cn/psb?/V10ZHE9M4DB6nN/kvOmxpDzSCqEzDZmZ39PpOuf*9q4ZQflNMYiJYBZqWc!/b/dEUBAAAAAAAA&bo=mgHeApoB3gIDFzI!&rf=viewer_4)
+![img](http://m.qpic.cn/psb?/V10ZHE9M4DB6nN/c1N5aaM0sZi.BYhQcjPPD6M3w6TvAs8.bfnLt787K9E!/b/dAgBAAAAAAAA&bo=lQHcApUB3AIDJwI!&rf=viewer_4)
 
 ## 排行榜
 
